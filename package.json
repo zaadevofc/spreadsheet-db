@@ -1,0 +1,33 @@
+{
+  "name": "@zaadevofc/spreadsheet-db",
+  "version": "1.0.4",
+  "description": "Using Spreadsheet as a fast and efficient SQL Database alternative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "zaadevofc",
+    "email": "zaadevofc@gmail.com",
+    "url": "https://github.com/zaadevofc"
+  },
+  "homepage": "https://github.com/zaadevofc/spreadsheet-db",
+  "repository": { "url": "git@github.com:zaadevofc/spreadsheet-db.git" },
+  "keywords": [
+    "db",
+    "sheet",
+    "Spreadsheet",
+    "db",
+    "database",
+    "excel",
+    "spreadsheet json",
+    "json",
+    "sql db"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "google-auth-library": "^8.9.0",
+    "google-spreadsheet": "^4.1.0",
+    "spreadsheet-to-json": "^2.0.0"
+  }
+}
