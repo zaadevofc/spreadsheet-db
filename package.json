@@ -1,6 +1,6 @@
 {
   "name": "@zaadevofc/spreadsheet-db",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Using Spreadsheet as a fast and efficient SQL Database alternative",
   "main": "index.js",
   "scripts": {

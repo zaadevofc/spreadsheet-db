@@ -73,19 +73,19 @@ module.exports = class SpreadDB {
         return result;
       },
       getAllSheets: () => allSheets,
-      getSheetByIndex: index => allSheets[index],
-      getSheetById: id => allSheets.find(x => x.id === id),
-      getSheetByTitle: title => allSheets.find(x => x.title === title),
+      getSheetByIndex: sheet_index => allSheets[sheet_index],
+      getSheetById: sheet_id => allSheets.find(x => x.id === sheet_id),
+      getSheetByTitle: sheet_title => allSheets.find(x => x.title === sheet_title),
 
       getAllContents: () => allSheets.map(x => x.contents),
-      getContentByIndex: index => allSheets[index].contents,
-      getContentById: id => allSheets.find(x => x.sheetId === id)?.contents,
-      getContentByTitle: title => allSheets.find(x => x.title === title)?.contents,
+      getContentByIndex: sheet_index => allSheets[sheet_index]?.contents,
+      getContentById: sheet_id => allSheets.find(x => x.sheetId === sheet_id)?.contents,
+      getContentByTitle: sheet_title => allSheets.find(x => x.title === sheet_title)?.contents,
 
-      changeDocTitle: title => {
+      changeDocTitle: new_title => {
         try {
-          if (!title) return false;
-          data.updateProperties({ title });
+          if (!new_title) return false;
+          data.updateProperties({ new_title });
           return true;
         } catch (e) {
           return false;

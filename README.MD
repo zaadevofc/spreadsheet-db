@@ -140,6 +140,8 @@ the changes will look like this:
 
 ![image tutorial](https://raw.githubusercontent.com/zaadevofc/zaadevofc/main/zaadevofc-spreadsheet-db-tutor-9.png)
 
+code :
+
 ```js
 // add multiple value
 await db.addValue('users', [
@@ -335,6 +337,8 @@ db.getData()
 |  2 | rosyid |  20 |
 |  3 |   ditha  |  32 |
 |  4 |  keja  |  25 |
+
+result of property `contents` :
 
 ```js
 {
